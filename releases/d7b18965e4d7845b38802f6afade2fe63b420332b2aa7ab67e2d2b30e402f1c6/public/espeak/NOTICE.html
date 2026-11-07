@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><title>Local pronunciation engine: license and source</title>
+<h1>eSpeak NG 1.52.0 / Spellophone 0.2.1</h1>
+<p>This static app includes an untrained, rules-based pronunciation engine, used in a local Worker to translate words into phonemes. Lyrics are never sent to an external service.</p>
+<p>eSpeak NG and the Spellophone wrapper are licensed under <a href="LICENSE">GNU GPL version 3 or later</a>. Copyright remains with their respective contributors.</p>
+<p>Corresponding source, including dictionary source, build scripts and patches: <a href="sources/espeak-ng-1.52.0-source.tar.gz">eSpeak NG 1.52.0</a> and <a href="sources/spellophone-source.tar.gz">Spellophone source</a>. Follow the Spellophone README build instructions; its vendor pin selects eSpeak NG 1.52.0. Local packaging changes are documented in <a href="prepare_espeak.py">prepare_espeak.py</a>; the worker bridge is <a href="../../src/phonemizer-worker.js">phonemizer-worker.js</a>.</p>
+<p>The packaged JavaScript only removes source-map trailers; source maps are replaced by the corresponding source archive. The data manifest retains English, French and Greek dictionaries, matching this app’s supported dictionary languages. Compiled engine and dictionary bytes are otherwise unchanged.</p>
