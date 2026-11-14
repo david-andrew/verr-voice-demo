@@ -1,0 +1,37 @@
+{
+  "package": "@spelling-creator/spellophone@0.2.1",
+  "engine": "eSpeak NG 1.52.0",
+  "license": "GPL-3.0-or-later",
+  "upstream": [
+    [
+      "spellophone-0.2.1.tgz",
+      "https://registry.npmjs.org/@spelling-creator/spellophone/-/spellophone-0.2.1.tgz",
+      "87b689c9676ad68170133a4f230302d892a036e68b38aa7c08c0219a06763544"
+    ],
+    [
+      "spellophone-source.tar.gz",
+      "https://codeload.github.com/Spelling-Creator/spellophone/tar.gz/6d51a872d54a773e4969d7130fdaed665b2d6d18",
+      "6702e673c93ea1d8d90300a162d64aaab9fdc23737068173ec54e0c0ca4c58c6"
+    ],
+    [
+      "espeak-ng-1.52.0-source.tar.gz",
+      "https://codeload.github.com/espeak-ng/espeak-ng/tar.gz/refs/tags/1.52.0",
+      "bb4338102ff3b49a81423da8a1a158b420124b055b60fa76cfb4b18677130a23"
+    ]
+  ],
+  "files": {
+    "dist/browser.js": "d4440b8c89e9b030d84d3b3e844e84dff6b2401539bb72939c0b7f5c4497a369",
+    "dist/core-w4y-vCu9.js": "03af14f5aedbb5f6d31f1287d8fd29c94a8d44165ebce381d4fd00611fe84f61",
+    "wasm/espeak-ng.js": "54a96f28ea3eeb86ca96abddeda0c62f1a34d3ce1ec5bdd68a8725730c187efa",
+    "wasm/espeak-ng.wasm": "9c7c358cfdd4efcaa35f79f6de2c01332ad60cb9b04ace51672e1ad94ac3d6ec",
+    "LICENSE": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "espeak-ng-data/manifest.json": "37e624682e3e90c0b1caf6f84105d8e43bc62d85ae8ae3f3310289b3fa0c7ae2",
+    "espeak-ng-data/core.bin.gz": "0caa44c9369df50948342b74d4e65f0fc54c284533ec38484da6f7d10da5fec4",
+    "espeak-ng-data/en_dict.gz": "cbd76e7f51b0406ba4c1974f7c156c6153daaced77dee2292690f81ed96e4f86",
+    "espeak-ng-data/fr_dict.gz": "fddd0e7afb7071134131dedecb8567ab76b09e3514abdb621c0d318dc5092945",
+    "espeak-ng-data/el_dict.gz": "36b0f6fe32631081e85cc45063871389a3204971d4aa6b8de4e6809ea862ee37",
+    "espeak-ng-data/de_dict.gz": "4cbbf25f83657f930b6876ecdc0d8cfb9eabc1d67e2ce91a8e19f206a6941022",
+    "sources/spellophone-source.tar.gz": "6702e673c93ea1d8d90300a162d64aaab9fdc23737068173ec54e0c0ca4c58c6",
+    "sources/espeak-ng-1.52.0-source.tar.gz": "bb4338102ff3b49a81423da8a1a158b420124b055b60fa76cfb4b18677130a23"
+  }
+}

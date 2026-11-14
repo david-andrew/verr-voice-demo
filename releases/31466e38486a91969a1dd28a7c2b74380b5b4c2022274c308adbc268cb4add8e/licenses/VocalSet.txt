@@ -1,0 +1,16 @@
+VocalSet: A Singing Voice Dataset
+Julia Wilkins, Prem Seetharaman, Alison Wahl, Bryan Pardo (2018)
+https://doi.org/10.5281/zenodo.1193957
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+The generated browser bank contains derived WORLD spectral envelopes,
+aperiodicity, pitch motion, and curated articulation analyses of public
+VocalSet recordings. The original recordings are not included in this checkout.
+Changes: register segmentation, spectral analysis, constant unit calibration,
+consonant trajectory extraction and native float32 packing. See the generated
+bank.json for source SHA-256 hashes and analysis versions.
+
+Articulation context selection also references Annotated VocalSet:
+Faghih & Timoney (2022), https://doi.org/10.5281/zenodo.7061507.
+No private recordings, fitted voice profiles, or private scores are in the bank.

@@ -1,0 +1,658 @@
+{
+  "version": 1,
+  "words": {
+    "lead": {
+      "default": "guide",
+      "choices": {
+        "guide": {
+          "label": "guide · leed",
+          "phones": "L IY D"
+        },
+        "metal": {
+          "label": "metal · led",
+          "phones": "L EH D"
+        }
+      },
+      "rules": [
+        [
+          "metal",
+          "\\b(?:of|molten|heavy|heavy as|made of|cast in|white|red) lead\\b|\\blead (?:weight|pipe|pipes|poison|bullet|shot|pencil|coffin)\\b"
+        ],
+        [
+          "guide",
+          "\\blead (?:me|us|them|him|her|you|the way|on|kindly|to|into|through|by)\\b|\\b(?:shall|will|would|can|may|must|to) lead\\b"
+        ]
+      ]
+    },
+    "read": {
+      "default": "present",
+      "choices": {
+        "present": {
+          "label": "present tense · reed",
+          "phones": "R IY D"
+        },
+        "past": {
+          "label": "past tense · red",
+          "phones": "R EH D"
+        }
+      },
+      "rules": [
+        [
+          "past",
+          "\\b(?:have|has|had|having|already|once|yesterday) (?:\\w+ ){0,2}read\\b|\\bread (?:it |this |that )?(?:yesterday|last night|long ago)\\b"
+        ],
+        [
+          "present",
+          "\\b(?:to|will|shall|can|must|please) read\\b"
+        ]
+      ]
+    },
+    "live": {
+      "default": "verb",
+      "choices": {
+        "verb": {
+          "label": "to live · liv",
+          "phones": "L IH V"
+        },
+        "adjective": {
+          "label": "alive or live performance · lyve",
+          "phones": "L AY V"
+        }
+      },
+      "rules": [
+        [
+          "adjective",
+          "\\blive (?:music|performance|broadcast|wire|wires|coal|coals|recording|show|concert|stream|animal|animals)\\b"
+        ],
+        [
+          "verb",
+          "\\b(?:i|we|they|you|to|shall|will|may|must|let.*) live\\b|\\blive (?:in|on|with|for|forever|again|and|alone|no more)\\b"
+        ]
+      ]
+    },
+    "wind": {
+      "default": "air",
+      "choices": {
+        "air": {
+          "label": "moving air · wind",
+          "phones": "W IH N D"
+        },
+        "turn": {
+          "label": "turn or weave · wynd",
+          "phones": "W AY N D"
+        }
+      },
+      "rules": [
+        [
+          "turn",
+          "\\b(?:to|shall|will|must) wind\\b|\\bwind (?:up|down|around|round|the clock|the thread|the watch|your)\\b"
+        ],
+        [
+          "air",
+          "\\b(?:the|a|cold|north|south|east|west|gentle|mighty) wind\\b|\\bwind (?:blows|bloweth|blowing|howls|sighs|and|of)\\b"
+        ]
+      ]
+    },
+    "wound": {
+      "default": "injury",
+      "choices": {
+        "injury": {
+          "label": "injury · woond",
+          "phones": "W UW N D"
+        },
+        "wrapped": {
+          "label": "wrapped or turned · wownd",
+          "phones": "W AW N D"
+        }
+      },
+      "rules": [
+        [
+          "wrapped",
+          "\\bwound (?:up|down|around|round|the clock|the thread|the watch)\\b"
+        ],
+        [
+          "injury",
+          "\\b(?:a|the|open|bleeding|mortal|deep|his|her|thy) wound\\b|\\bwound (?:me|us|him|her|them|my|his|thy|your|in|of)\\b"
+        ]
+      ]
+    },
+    "tear": {
+      "default": "cry",
+      "choices": {
+        "cry": {
+          "label": "a teardrop · teer",
+          "phones": "T IA"
+        },
+        "rip": {
+          "label": "rip apart · tair",
+          "phones": "T EA"
+        }
+      },
+      "rules": [
+        [
+          "rip",
+          "\\btear (?:apart|away|down|up|asunder|off|through|the veil|the fabric|my heart)\\b|\\b(?:to|will|shall|must) tear\\b"
+        ],
+        [
+          "cry",
+          "\\b(?:a|the|one|single|silent|falling|bitter) tear\\b|\\btear (?:falls|fell|falling|from|in|on|of)\\b"
+        ]
+      ]
+    },
+    "bow": {
+      "default": "bend",
+      "choices": {
+        "bend": {
+          "label": "bend or front of a ship · bow",
+          "phones": "B AW"
+        },
+        "ribbon": {
+          "label": "ribbon or bow and arrow · boh",
+          "phones": "B OW"
+        }
+      },
+      "rules": [
+        [
+          "ribbon",
+          "\\bbow (?:and arrow|of ribbon|string|strings)\\b|\\b(?:rain|ribbon|violin|cello) bow\\b"
+        ],
+        [
+          "bend",
+          "\\bbow (?:down|before|to|thy|your|our|my|his|her|the head)\\b|\\b(?:i|we|they|you|shall|will|to) bow\\b"
+        ]
+      ]
+    },
+    "close": {
+      "default": "near",
+      "choices": {
+        "near": {
+          "label": "near · klohs",
+          "phones": "K L OW S"
+        },
+        "shut": {
+          "label": "shut · klohz",
+          "phones": "K L OW Z"
+        }
+      },
+      "rules": [
+        [
+          "shut",
+          "\\bclose (?:the|thy|your|my|his|her|our|their|these|those)\\b|\\b(?:to|shall|will|must) close\\b"
+        ],
+        [
+          "near",
+          "\\bclose (?:to|by|beside|at hand|together)\\b|\\b(?:so|very|stay|hold me|keep me) close\\b"
+        ]
+      ]
+    },
+    "use": {
+      "default": "noun",
+      "choices": {
+        "noun": {
+          "label": "purpose · yooss",
+          "phones": "Y UW S"
+        },
+        "verb": {
+          "label": "make use of · yooz",
+          "phones": "Y UW Z"
+        }
+      },
+      "rules": [
+        [
+          "verb",
+          "\\b(?:to|will|shall|can|must|i|we|they|you|please) use\\b|\\buse (?:me|us|it|them|your|thy|this|these|the)\\b"
+        ],
+        [
+          "noun",
+          "\\b(?:the|a|no|of|any|in|for|its) use\\b"
+        ]
+      ]
+    },
+    "bass": {
+      "default": "voice",
+      "choices": {
+        "voice": {
+          "label": "low voice or instrument · base",
+          "phones": "B EY S"
+        },
+        "fish": {
+          "label": "fish · bass",
+          "phones": "B AE S"
+        }
+      },
+      "rules": [
+        [
+          "fish",
+          "\\b(?:sea|striped|largemouth|smallmouth|catch|caught|fishing for) bass\\b"
+        ],
+        [
+          "voice",
+          "\\bbass (?:voice|voices|singer|singers|line|part|drum|guitar|clef)\\b"
+        ]
+      ]
+    },
+    "does": {
+      "default": "verb",
+      "choices": {
+        "verb": {
+          "label": "does something · duz",
+          "phones": "D AH Z"
+        },
+        "deer": {
+          "label": "female deer · dohz",
+          "phones": "D OW Z"
+        }
+      },
+      "rules": [
+        [
+          "deer",
+          "\\b(?:bucks and|stags and|deer and|two|three) does\\b"
+        ],
+        [
+          "verb",
+          "\\bdoes (?:he|she|it|not|the|thy|my|his|her)\\b"
+        ]
+      ]
+    },
+    "sow": {
+      "default": "plant",
+      "choices": {
+        "plant": {
+          "label": "plant seeds · soh",
+          "phones": "S OW"
+        },
+        "animal": {
+          "label": "female pig · sow",
+          "phones": "S AW"
+        }
+      },
+      "rules": [
+        [
+          "animal",
+          "\\b(?:the|a|mother|fat) sow\\b"
+        ],
+        [
+          "plant",
+          "\\bsow (?:in|with|the seeds|seeds|and|thy|your|our)\\b|\\b(?:to|they|we|shall|will) sow\\b"
+        ]
+      ]
+    }
+  },
+  "sung_words": {
+    "orion": {
+      "languages": [
+        "english"
+      ],
+      "3": [
+        "AA",
+        "R AA IH",
+        "AH N"
+      ]
+    },
+    "rion": {
+      "languages": [
+        "english"
+      ],
+      "2": [
+        "R AA IH",
+        "AH N"
+      ]
+    },
+    "alleluia": {
+      "4": [
+        "AA",
+        "L EH",
+        "L UW",
+        "Y AA"
+      ],
+      "5": [
+        "AA",
+        "L EH",
+        "L UW",
+        "IY",
+        "AA"
+      ]
+    },
+    "hallelujah": {
+      "4": [
+        "HH AA",
+        "L EH",
+        "L UW",
+        "Y AA"
+      ],
+      "5": [
+        "HH AA",
+        "L EH",
+        "L UW",
+        "IY",
+        "AA"
+      ]
+    },
+    "kyrie": {
+      "3": [
+        "K IY",
+        "R IY",
+        "EH"
+      ]
+    },
+    "eleison": {
+      "4": [
+        "EH",
+        "L EH",
+        "IY",
+        "Z AO N"
+      ]
+    },
+    "blessed": {
+      "2": [
+        "B L EH",
+        "S IH D"
+      ]
+    },
+    "learned": {
+      "2": [
+        "L ER",
+        "N IH D"
+      ]
+    },
+    "aged": {
+      "2": [
+        "EY",
+        "JH IH D"
+      ]
+    },
+    "beloved": {
+      "3": [
+        "B IH",
+        "L AH",
+        "V IH D"
+      ]
+    },
+    "heavenly": {
+      "2": [
+        "HH EH V",
+        "N L IY"
+      ],
+      "3": [
+        "HH EH",
+        "V AX N",
+        "L IY"
+      ]
+    },
+    "leluia": {
+      "3": [
+        "L EH",
+        "L UW",
+        "Y AA"
+      ],
+      "4": [
+        "L EH",
+        "L UW",
+        "IY",
+        "AA"
+      ]
+    }
+  },
+  "systems": {
+    "church-latin": {
+      "language": "latin",
+      "name": "Church Latin",
+      "description": "Italianate (Roman) Latin as most choirs sing it: e, ae, oe open [ɛ], o open [ɔ], c and g soft before e/i, gn [ɲ].",
+      "latin": {
+        "vowels": {
+          "a": [
+            "Q"
+          ],
+          "e": [
+            "EH"
+          ],
+          "i": [
+            "I"
+          ],
+          "o": [
+            "OH"
+          ],
+          "u": [
+            "U"
+          ],
+          "y": [
+            "I"
+          ],
+          "ae": [
+            "EH"
+          ],
+          "oe": [
+            "EH"
+          ],
+          "au": [
+            "Q",
+            "UH"
+          ],
+          "eu": [
+            "EH",
+            "UH"
+          ]
+        },
+        "c_front": [
+          "CH"
+        ],
+        "cc_front": [
+          "CH"
+        ],
+        "g_front": [
+          "JH"
+        ],
+        "gg_front": [
+          "JH"
+        ],
+        "sc_front": [
+          "SH"
+        ],
+        "xc_front": [
+          "K",
+          "SH"
+        ],
+        "gn": [
+          "NY"
+        ],
+        "gl_front": [
+          "LY"
+        ],
+        "qu": [
+          "K",
+          "W"
+        ],
+        "gu": [
+          "G",
+          "W"
+        ],
+        "ti_vowel": [
+          "TS"
+        ],
+        "ex_vowel": [
+          "G",
+          "Z"
+        ],
+        "h": [],
+        "h_k": [
+          "K"
+        ],
+        "z": [
+          "DZ"
+        ],
+        "j": [
+          "Y"
+        ],
+        "gn_coda": [
+          "NY"
+        ],
+        "gn_onset": [
+          "NY"
+        ]
+      }
+    },
+    "german-latin": {
+      "language": "latin",
+      "name": "German Latin",
+      "basedOn": "church-latin",
+      "shipped": false,
+      "description": "Proposal for Matt's review (docs/research/pronunciation/german-latin.md): [ts] for soft c, [kv] for qu, closer vowels, sounded h.",
+      "latin": {
+        "vowels": {
+          "a": [
+            "A"
+          ],
+          "au": [
+            "A",
+            "UH"
+          ],
+          "e": [
+            "E"
+          ],
+          "o": [
+            "O"
+          ],
+          "ae": [
+            "E"
+          ],
+          "oe": [
+            "E"
+          ],
+          "eu": [
+            "O",
+            "Y"
+          ],
+          "y": [
+            "I"
+          ]
+        },
+        "c_front": [
+          "TS"
+        ],
+        "cc_front": [
+          "K",
+          "TS"
+        ],
+        "g_front": [
+          "G"
+        ],
+        "gg_front": [
+          "G"
+        ],
+        "sc_front": [
+          "S",
+          "TS"
+        ],
+        "xc_front": [
+          "K",
+          "S",
+          "TS"
+        ],
+        "gn": [
+          "G",
+          "N"
+        ],
+        "gl_front": [
+          "G",
+          "L"
+        ],
+        "qu": [
+          "K",
+          "V"
+        ],
+        "gu": [
+          "G",
+          "V"
+        ],
+        "ex_vowel": [
+          "K",
+          "S"
+        ],
+        "h": [
+          "HH"
+        ],
+        "h_k": [
+          "HH"
+        ],
+        "z": [
+          "TS"
+        ],
+        "j": [
+          "Y"
+        ],
+        "gn_coda": [
+          "G"
+        ],
+        "gn_onset": [
+          "N"
+        ]
+      }
+    },
+    "british-english": {
+      "language": "english",
+      "name": "British English",
+      "description": "Choral British English: light final r.",
+      "accent": "choral"
+    },
+    "american-english": {
+      "language": "english",
+      "name": "American English",
+      "description": "American choral English: pronounced r.",
+      "accent": "american"
+    }
+  },
+  "language_defaults": {
+    "latin": "church-latin",
+    "english": "british-english"
+  },
+  "choir_systems": {
+    "english_cathedral": {
+      "latin": "church-latin",
+      "english": "british-english"
+    },
+    "renaissance_consort": {
+      "latin": "church-latin",
+      "english": "british-english"
+    },
+    "american_chamber": {
+      "latin": "church-latin",
+      "english": "american-english"
+    },
+    "community_choir": {
+      "latin": "church-latin",
+      "english": "american-english"
+    },
+    "symphonic_chorus": {
+      "latin": "church-latin",
+      "english": "american-english"
+    },
+    "baltic_chamber": {
+      "latin": "church-latin",
+      "english": "british-english"
+    },
+    "vienna_boys": {
+      "latin": "german-latin",
+      "english": "british-english"
+    },
+    "russian_capella": {
+      "latin": "church-latin",
+      "english": "british-english"
+    },
+    "opera_chorus": {
+      "latin": "church-latin",
+      "english": "british-english"
+    },
+    "mediterranean_early": {
+      "latin": "church-latin",
+      "english": "british-english"
+    },
+    "monastic_schola": {
+      "latin": "church-latin",
+      "english": "british-english"
+    },
+    "solo_cantor": {
+      "latin": "church-latin",
+      "english": "british-english"
+    }
+  }
+}
